@@ -21,7 +21,7 @@ export const TodoDetails = () => {
 export const todoDetailsLoader = async ({ params }) => {
   console.log('todoDetailsLoader');
   const { id } = params;
-  const res = await fetch('http://localhost:4000/todos/' + id);
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos/' + id);
 
   if (!res.ok) {
     throw Error('Could not find that ID');

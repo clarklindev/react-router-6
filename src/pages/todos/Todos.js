@@ -18,7 +18,7 @@ export const Todos = () => {
 
 export const todosLoader = async () => {
   console.log('todosLoader');
-  const res = await fetch('http://localhost:4000/todos');
+  const res = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=10');
 
   if (!res.ok) {
     throw Error('Could not fetch the data');
