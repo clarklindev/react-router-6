@@ -4,7 +4,6 @@ export const Home = () => {
   return (
     <div>
       Home
-      <Outlet />
     </div>
   );
 };
